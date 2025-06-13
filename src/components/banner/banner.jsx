@@ -1,10 +1,9 @@
-function Banner() {
-    return (
-        <div className="banner">
-          <img src=".#" alt="banner-kasa" />
-        <p>bla bla</p>
-        </div>
-    );
-  }
-  
-  export default Banner;
+import './_banner.scss';
+
+export default function Banner() {
+  return (
+    <div className="banner">
+      <p>Chez vous, partout et ailleurs</p>
+    </div>
+  );
+}

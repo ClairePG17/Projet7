@@ -1,0 +1,30 @@
+.banner {
+  position: relative;
+  width: 1240px;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 43px;
+  background-image: url("../../assets/banner.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    border-radius: 16px;
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
