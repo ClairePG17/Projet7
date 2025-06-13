@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  nav {
+    display: flex;
+    gap: 57px;
+
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &.active {
+        text-decoration: underline;
+        text-decoration-color: #000;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+}
