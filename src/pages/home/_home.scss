@@ -1,12 +1,26 @@
+@import '../../styles/variables';
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #F6F6F6;
+  background-color: $grey;
   border-radius: 25px;
   width: inherit;
   height: 829px;
   overflow: scroll;
   padding : 60px 50px;
   gap: 4.16vw;
+
+  & a {
+    text-decoration: none; 
+    color: inherit;        
+    width: calc(33.33% - 4.17vw); 
+    height: 340px;              
+    display: block;             
+    border-radius: 10px;
+    cursor: pointer;
+  }
 }
+
+

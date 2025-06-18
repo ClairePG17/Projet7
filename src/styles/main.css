@@ -52,4 +52,13 @@ body {
   overflow: scroll;
   padding: 60px 50px;
   gap: 4.16vw;
+}
+.cards-container a {
+  text-decoration: none;
+  color: inherit;
+  width: calc(33.33% - 4.17vw);
+  height: 340px;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

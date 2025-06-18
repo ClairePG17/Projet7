@@ -1,3 +1,5 @@
+@import "../../styles/_variables.scss";
+
 .collapse {
   margin: 0px 14.4vw 28px 14.4vw;
   border-radius: 5px;
@@ -9,7 +11,7 @@
     align-items: center;
     padding: 10px 20px 10px 15px;
     color: white;
-    background-color: #ff6060;
+    background-color: $primary-color;
   }
 
   &__title {
@@ -19,7 +21,7 @@
 
   &__content {
     padding: 10px 20px 10px 15px;
-    background-color: rgba(246, 246, 246, 0.45);
+    background-color: $grey-light;
     color: black;
     font-size: 18px;
     font-weight: 400;
@@ -31,6 +33,6 @@
   }
 
   &__chevron.is-open {
-    transform: rotate(0deg);
+    transform: rotate(-360deg);
   }
 }

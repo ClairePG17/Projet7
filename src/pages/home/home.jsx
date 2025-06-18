@@ -2,7 +2,8 @@ import logements from "../../data/data.json";
 import Card from "../../components/Card/Card";
 import Banner from "../../components/Banner/Banner";
 import ImageBanner from "../../assets/banner_home.png";
-import './_home.scss';
+import "./_home.scss";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -11,12 +12,17 @@ export default function Home() {
         <Banner image={ImageBanner} text="Chez vous, partout et ailleurs" />
         <div className="cards-container">
           {logements.map((logement) => (
-            <Card
+            <Link
+              to={`/Housing/${logement.id}`}
               key={logement.id}
-              title={logement.title}
-              image={logement.cover}
-              description={logement.description}
-            />
+              style={{ textDecoration: "none" }}
+            >
+              <Card
+                title={logement.title}
+                image={logement.cover}
+                description={logement.description}
+              />
+            </Link>
           ))}
         </div>
       </main>

@@ -1,3 +1,5 @@
+@import '../../styles/_variables.scss';
+
 .Notfound {
   display: flex;
   flex-direction: column;
@@ -5,13 +7,13 @@
   gap: 139px;
 
   &__404 {
-    color: #ff6060;
+    color: $primary-color;
     font-size: 288px;
     font-weight: bold;
     margin: 0;
   }
   &__text {
-    color: #ff6060;
+    color: $primary-color;
     font-size: 36px;
     font-weight: 500;
     margin: 0;
