@@ -1,9 +1,12 @@
 import './_banner.scss';
 
-export default function Banner() {
+export default function Banner({ image, text }) {
   return (
-    <div className="banner">
-      <p>Chez vous, partout et ailleurs</p>
+    <div
+      className="banner"
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      {text && <p>{text}</p>}
     </div>
   );
 }

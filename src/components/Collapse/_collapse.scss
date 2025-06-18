@@ -1,0 +1,36 @@
+.collapse {
+    margin: 0px 14.4vw 28px 14.4vw;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+    color: white;
+    background-color: #ff6060;
+  
+    &__header {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+
+    }
+  
+    &__content {
+      margin-top: 8px;
+      color: white;
+    }
+
+    &__chevron {
+        transform: rotate(-180deg);
+        transition: transform 0.2s;
+      }
+      
+      &__chevron.is-open {
+        transform: rotate(180deg);
+      }
+  }
+
+ 

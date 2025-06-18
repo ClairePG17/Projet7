@@ -1,5 +1,6 @@
 import "./_card.scss";
 
+
 export default function Card({ title, image }) {
   return (
     <div className="card">
@@ -8,3 +9,4 @@ export default function Card({ title, image }) {
     </div>
   );
 }
+
