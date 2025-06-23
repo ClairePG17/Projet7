@@ -9,7 +9,14 @@ export default function Home() {
   return (
     <>
       <main className="home-main">
-        <Banner image={ImageBanner} text="Chez vous, partout et ailleurs" />
+        <Banner
+          image={ImageBanner}
+          text={
+            <>
+              Chez vous,<span className="mobile-break"></span> partout et ailleurs
+            </>
+          }
+        />
         <div className="cards-container">
           {logements.map((logement) => (
             <Link

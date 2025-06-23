@@ -5,3 +5,13 @@ header, main{
 body{
     margin: 0;
 }
+
+@media (max-width: 767.98px) {
+    header, main{
+        margin : 20px;
+    }
+    
+    body{
+        margin: 0;
+    }
+}

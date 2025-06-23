@@ -47,11 +47,13 @@ export default function Housing() {
       </div>
       <div className="housing__tags-rating">
         <Tags tags={logement.tags} />
-        <StarRating rating={Number(logement.rating)} />
+        <StarRating rating={logement.rating} />
       </div>
       <div className="housing__services">
         <Collapse title="Description">{logement.description}</Collapse>
-        <Collapse title="Equipement"><EquipmentsList equipments={logement.equipments} /></Collapse>
+        <Collapse title="Equipement">
+          <EquipmentsList equipments={logement.equipments} />
+        </Collapse>
       </div>
     </div>
   );

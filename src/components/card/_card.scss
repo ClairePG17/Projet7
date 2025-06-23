@@ -19,11 +19,7 @@
     inset: 0;
     border-radius: 10px;
     pointer-events: none;
-    background: linear-gradient(
-      to bottom,
-      rgba(4, 4, 4, 0.41) 41%,
-      rgba(0, 0, 0, 1) 100%
-    );
+    background: linear-gradient(to bottom, rgba(4, 4, 4, 0.41) 41%, rgba(0, 0, 0, 1) 100%);
     z-index: 1;
   }
 
@@ -38,3 +34,12 @@
   }
 }
 
+@media (max-width: 767.98px) {
+  .card {
+    height: 255px;
+    &__title {
+      bottom: 20px; 
+      top: auto; 
+    }
+  }
+}

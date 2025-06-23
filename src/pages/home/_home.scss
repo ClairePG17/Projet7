@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import "../../styles/_variables";
 
 .cards-container {
   display: flex;
@@ -7,20 +7,37 @@
   background-color: $grey;
   border-radius: 25px;
   width: inherit;
-  height: 829px;
+  height: calc(829px - 120px);
   overflow: scroll;
-  padding : 60px 50px;
+  padding: 60px 50px;
   gap: 4.16vw;
 
   & a {
-    text-decoration: none; 
-    color: inherit;        
-    width: calc(33.33% - 4.17vw); 
-    height: 340px;              
-    display: block;             
+    text-decoration: none;
+    color: inherit;
+    width: calc(33.33% - 4.17vw);
+    height: 340px;
+    display: block;
     border-radius: 10px;
     cursor: pointer;
   }
 }
 
-
+// Mobile
+@media (max-width: 767.98px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 16px 8px;
+    background-color: white;
+    height: 785px;
+    & a {
+      width: 89.33vw;
+      height: 255px;
+    }
+  }
+  .banner .mobile-break {
+    display: block;
+  }
+}
