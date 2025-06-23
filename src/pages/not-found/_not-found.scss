@@ -1,4 +1,4 @@
-@import '../../styles/_variables.scss';
+@import "../../styles/_variables.scss";
 
 .Notfound {
   display: flex;
@@ -19,9 +19,38 @@
     margin: 0;
   }
 
-  &__LinkToHome{
+  &__LinkToHome {
     font-weight: 500;
     color: black;
     margin: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .Notfound {
+    gap: 0;
+
+    &__404 {
+      width: 53.06vw;
+      height: 99px;
+      font-size: 96px;
+      margin: 86px 0 113px 0;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin: 0 0px 113px 0px;
+      text-align: center;
+    }
+
+    & .mobile-break {
+      display: block;
+    }
+
+    &__LinkToHome {
+      margin-bottom: 113px;
+      font-size: 14px;
+    }
   }
 }

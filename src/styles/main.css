@@ -62,14 +62,18 @@ body {
 }
 .footer p {
   width: 500px;
+  margin-top: 28px;
 }
 
 @media (max-width: 767.98px) {
   .footer {
-    padding: 66px 127px 58px 127px;
+    padding: 0 127px 0 127px;
     margin: 0;
     height: 209px;
     justify-content: center;
+  }
+  .footer p {
+    margin: 0;
   }
   .footer .mobile-break {
     display: block;
