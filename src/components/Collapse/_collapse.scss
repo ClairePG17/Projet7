@@ -2,7 +2,6 @@
 
 .collapse {
   margin: 0px 14.4vw 28px 14.4vw;
-  border-radius: 5px;
 
   &__header {
     cursor: pointer;
@@ -12,6 +11,7 @@
     padding: 10px 20px 10px 15px;
     color: white;
     background-color: $primary-color;
+    border-radius: 10px;
   }
 
   &__title {
@@ -34,5 +34,28 @@
 
   &__chevron.is-open {
     transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 767.98px){
+  .collapse{
+    margin: 20px;
+
+    &__header{
+      height: 10px;
+    }
+
+    &__title{
+      font-size: 13px;
+    }
+
+    &__content{
+      font-size: 12px;
+    }
+
+    &__chevron{
+      width: 16px;
+      height: 9.14px;
+    }
   }
 }

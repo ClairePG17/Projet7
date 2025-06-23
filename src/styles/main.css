@@ -35,6 +35,9 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .header {
+    margin-bottom: 27px;
+  }
   .header .logo img {
     width: 145px;
     height: 47px;
@@ -64,6 +67,12 @@ body {
 @media (max-width: 767.98px) {
   .footer {
     padding: 66px 127px 58px 127px;
+    margin: 0;
+    height: 209px;
+    justify-content: center;
+  }
+  .footer .mobile-break {
+    display: block;
   }
 }
 .cards-container {
