@@ -2,7 +2,7 @@
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // 3 colonnes de largeur égale
+  grid-template-columns: repeat(3, 1fr); 
   gap: 4.16vw;
   background-color: $grey;
   border-radius: 25px;
@@ -18,7 +18,7 @@
     display: block;
     border-radius: 10px;
     cursor: pointer;
-    width: 100%; // Prend toute la largeur de la colonne
+    width: 100%; 
   }
 }
 
