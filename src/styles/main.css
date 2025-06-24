@@ -56,8 +56,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 66px 463px 33px 463px;
-  width: inherit;
+  padding: 66px 0px 33px 0px;
+  width: 100vw;
   margin: 50px 0 0 0;
 }
 .footer p {
@@ -67,10 +67,10 @@ body {
 
 @media (max-width: 767.98px) {
   .footer {
-    padding: 0 127px 0 127px;
     margin: 0;
     height: 209px;
     justify-content: center;
+    padding: 0;
   }
   .footer p {
     margin: 0;

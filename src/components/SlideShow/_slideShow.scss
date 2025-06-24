@@ -41,3 +41,18 @@
     }
   }
   
+  @media (max-width: 767.98px){
+    .slideshow{
+      height: 255px;
+      width: 89.33vw;
+
+      &__arrow{
+        width: 24px;
+        height: 24px;
+      }
+
+      &__counter{
+        display: none;
+      }
+    }
+  }

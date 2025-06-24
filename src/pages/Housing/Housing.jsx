@@ -35,20 +35,21 @@ export default function Housing() {
           <p>
             {city}, {region}
           </p>
+          <Tags tags={logement.tags} />
         </div>
-        <div className="housing__title__host">
-          <img src={logement.host.picture}></img>
-          <p>
-            {firstName}
-            <br />
-            {lastName}
-          </p>
+        <div className="housing__title__hostAndRating">
+          <div className="housing__title__host">
+            <img src={logement.host.picture}></img>
+            <p>
+              {firstName}
+              <br />
+              {lastName}
+            </p>
+          </div>
+          <StarRating rating={logement.rating} />
         </div>
       </div>
-      <div className="housing__tags-rating">
-        <Tags tags={logement.tags} />
-        <StarRating rating={logement.rating} />
-      </div>
+
       <div className="housing__services">
         <Collapse title="Description">{logement.description}</Collapse>
         <Collapse title="Equipement">

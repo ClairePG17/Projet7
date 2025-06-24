@@ -1,5 +1,6 @@
 import starFull from "../../assets/star_full.svg";   
 import starEmpty from "../../assets/star_empty.svg";  
+import './_starRating.scss';
 
 export default function StarRating({ rating, max = 5 }) {
   const stars = [];
