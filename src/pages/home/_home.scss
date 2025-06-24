@@ -1,39 +1,40 @@
 @import "../../styles/_variables";
 
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 3 colonnes de largeur égale
+  gap: 4.16vw;
   background-color: $grey;
   border-radius: 25px;
   width: inherit;
   height: calc(829px - 120px);
   overflow: scroll;
   padding: 60px 50px;
-  gap: 4.16vw;
-
+  
   & a {
     text-decoration: none;
     color: inherit;
-    width: calc(33.33% - 4.17vw);
     height: 340px;
     display: block;
     border-radius: 10px;
     cursor: pointer;
+    width: 100%; // Prend toute la largeur de la colonne
   }
 }
 
 // Mobile
 @media (max-width: 767.98px) {
   .cards-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 16px 8px;
+    padding: 16px 0px;
     background-color: white;
     height: 785px;
+
     & a {
-      width: 89.33vw;
+      width: 100%;
       height: 255px;
     }
   }
