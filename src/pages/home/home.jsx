@@ -22,7 +22,6 @@ export default function Home() {
             <Link
               to={`/Housing/${logement.id}`}
               key={logement.id}
-              style={{ textDecoration: "none" }}
             >
               <Card
                 title={logement.title}
