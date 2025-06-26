@@ -1,5 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useParams, Navigate } from "react-router-dom";
 import SlideShow from "../../components/SlideShow/SlideShow";
 import logements from "../../data/data.json";
 import Collapse from "../../components/Collapse/Collapse";
@@ -10,17 +9,10 @@ import "./_housing.scss";
 
 export default function Housing() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const logement = logements.find((item) => item.id === id);
 
-  useEffect(() => {
-    if (!logement) {
-      navigate("/NotFound");
-    }
-  }, [logement, navigate]);
-
   if (!logement) {
-    return null;
+    return <Navigate to="/error" />;
   }
 
   const [firstName, lastName] = logement.host.name.split(" ");
