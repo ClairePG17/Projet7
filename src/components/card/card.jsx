@@ -1,13 +1,12 @@
-import "./card.scss";
+import "./_card.scss";
 
-export default function Card({ title, image, description }) {
+
+export default function Card({ title, image }) {
   return (
     <div className="card">
-      <img src={image} alt={title} />
-      <div className="card-body">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+      <img className="card__img" src={image} alt={title} />
+      <h3 className="card__title">{title}</h3>
     </div>
   );
 }
+

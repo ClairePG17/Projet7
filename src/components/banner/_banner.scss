@@ -1,0 +1,46 @@
+.banner {
+  position: relative;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 43px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    border-radius: 16px;
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner {
+    height: 111px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 16px;
+    margin-bottom: 20px;
+
+    &::after{
+      width: 100%;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+}

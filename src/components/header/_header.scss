@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  nav {
+    display: flex;
+    gap: 57px;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 500;
+
+      &.active {
+        text-decoration: underline;
+        text-decoration-color: #000;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header {
+    margin-bottom: 27px;
+
+    .logo img {
+      width: 145px;
+      height: 47px;
+    }
+
+    nav {
+      gap: 26px;
+      
+      a {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

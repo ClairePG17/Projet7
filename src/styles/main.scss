@@ -1,4 +1,5 @@
 @import './_variables';
 @import './_layout';
-@import '../components/header/header';
-@import '../components/footer/footer';
+@import '../components/Header/_header';
+@import '../components/Footer/_footer';
+@import '../pages/Home/_home';

@@ -1,0 +1,64 @@
+@import "../../styles/_variables.scss";
+
+.collapse {
+  margin: 0px 14.4vw 28px 14.4vw;
+
+  &__header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 15px;
+    color: white;
+    background-color: $primary-color;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__content {
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    padding: 20px 20px 10px 15px;
+    background-color: $grey-light;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__chevron {
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+  }
+
+  &__chevron.is-open {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .collapse {
+    margin: 20px;
+
+    &__header {
+      height: 10px;
+    }
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__content {
+      font-size: 12px;
+    }
+
+    &__chevron {
+      width: 20px;
+      height: 12px;
+    }
+  }
+}
