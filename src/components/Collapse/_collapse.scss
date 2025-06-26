@@ -20,7 +20,10 @@
   }
 
   &__content {
-    padding: 10px 20px 10px 15px;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    padding: 20px 20px 10px 15px;
     background-color: $grey-light;
     color: black;
     font-size: 18px;
@@ -37,25 +40,25 @@
   }
 }
 
-@media (max-width: 767.98px){
-  .collapse{
+@media (max-width: 767.98px) {
+  .collapse {
     margin: 20px;
 
-    &__header{
+    &__header {
       height: 10px;
     }
 
-    &__title{
+    &__title {
       font-size: 13px;
     }
 
-    &__content{
+    &__content {
       font-size: 12px;
     }
 
-    &__chevron{
-      width: 16px;
-      height: 9.14px;
+    &__chevron {
+      width: 20px;
+      height: 12px;
     }
   }
 }
