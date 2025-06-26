@@ -7,6 +7,21 @@ body, .main-content {
   margin: 0;
 }
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
 @media (max-width: 767.98px) {
   header,
   main {
@@ -64,6 +79,7 @@ body, .main-content {
   padding: 66px 0px 33px 0px;
   width: 100vw;
   margin: 50px 0 0 0;
+  flex-shrink: 0;
 }
 .footer p {
   width: 500px;
