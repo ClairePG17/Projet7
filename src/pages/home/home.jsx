@@ -26,7 +26,6 @@ export default function Home() {
               <Card
                 title={logement.title}
                 image={logement.cover}
-                description={logement.description}
               />
             </Link>
           ))}
