@@ -5,12 +5,15 @@ main {
 
 body, .main-content {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #root {
@@ -107,8 +110,6 @@ html, body, #root {
   background-color: #F6F6F6;
   border-radius: 25px;
   width: inherit;
-  height: 709px;
-  overflow: scroll;
   padding: 60px 50px;
 }
 .cards-container a {
@@ -129,7 +130,6 @@ html, body, #root {
     flex-wrap: nowrap;
     padding: 0px;
     background-color: white;
-    height: 785px;
   }
   .cards-container a {
     width: 100%;

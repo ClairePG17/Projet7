@@ -7,8 +7,6 @@
   background-color: $grey;
   border-radius: 25px;
   width: inherit;
-  height: calc(829px - 120px);
-  overflow: scroll;
   padding: 60px 50px;
   
   & a {
@@ -31,7 +29,6 @@
     flex-wrap: nowrap;
     padding: 0px;
     background-color: white;
-    height: 785px;
 
     & a {
       width: 100%;
